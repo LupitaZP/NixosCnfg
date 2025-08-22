@@ -92,8 +92,8 @@
   nix = {
     settings = {
       # Nix users config
-      allowed-users = [ "@wheel" "moperatico" ];
-      trusted-users = [ "root" "moperatico" ];
+      allowed-users = [ "@wheel" "moperatico" "Lupita"];
+      trusted-users = [ "root" "moperatico" "Lupita" ];
     };
   };
 }

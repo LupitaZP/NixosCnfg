@@ -1,15 +1,16 @@
 { pkgs, ... }:
 
 let
-  tagName = "OswaldoMoper";
-  email   = "oswaldomoyap@gmail.com";
+  tagName = "LupitaZP";
+  email   = "mzarazua001@gmail.com";
 in {
   # Define a user account.
-  users.users.moperatico = {
+  users.users.Lupita = {
     isNormalUser = true;
-    description = "Oscar Oswaldo Moya Perez";
+    description = "María Guadalupe Zarazúa Pérez";
     extraGroups = [ "networkmanager" "wheel" "video" "audio" ]; 
-    hashedPassword = "$6$IqhGanTrCJ3Y8GMS$2.q7j7DfXCbEEo1zUNkQTsSL5JuPpZbM4AghPXdycMBL6Hond51SCECELA7ufpbdrlq/u5UY/91Ph4Pu5Q/GW.";
+    # hashedPassword = "$6$IqhGanTrCJ3Y8GMS$2.q7j7DfXCbEEo1zUNkQTsSL5JuPpZbM4AghPXdycMBL6Hond51SCECELA7ufpbdrlq/u5UY/91Ph4Pu5Q/GW.";
+    password = "Lupitwa";
     shell = pkgs.zsh;
   };
 # List programs that you want to enable:
@@ -72,7 +73,7 @@ in {
         port = 587;
         from = email;
         user = email;
-        passwordeval = "cat /home/omoper/password.txt";
+        passwordeval = "cat /home/Lupita/password.txt";
       };
     };
   # Enable and config git
