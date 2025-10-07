@@ -7,8 +7,9 @@
       enable = true;
     # Configure keymap in X11
       xkb = {
-        layout = "us";
-        variant = "altgr-intl";
+        layout = "latam";
+       # variant = "altgr-intl";
+       
       };
     };
   # Enable the Desktop Environment.
@@ -21,7 +22,7 @@
     # Enable automatic login for the user.
       autoLogin = {
         enable = true;
-        user = "moperatico";
+        user = "lupita";
       };
     };
     desktopManager.plasma6.enable = true;

@@ -5,9 +5,9 @@
   # Enable and config bootloader
   boot.loader = {
     efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi";
-    };
+     canTouchEfiVariables = true;
+     efiSysMountPoint = "/boot/efi";
+     };
     # Using grub boot loader
     grub ={
       enable = true;
@@ -73,6 +73,7 @@
       nix-prefetch-git
       oh-my-zsh
       zlib
+      vim
       # Requsites for doomemacs
       clang
       coreutils
@@ -92,8 +93,8 @@
   nix = {
     settings = {
       # Nix users config
-      allowed-users = [ "@wheel" "moperatico" "Lupita"];
-      trusted-users = [ "root" "moperatico" "Lupita" ];
+      allowed-users = [ "@wheel" "lupita"];
+      trusted-users = [ "root" "lupita" ];
     };
   };
 }

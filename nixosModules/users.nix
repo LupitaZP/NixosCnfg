@@ -5,12 +5,12 @@ let
   email   = "mzarazua001@gmail.com";
 in {
   # Define a user account.
-  users.users.Lupita = {
+  users.users.lupita = {
     isNormalUser = true;
     description = "María Guadalupe Zarazúa Pérez";
     extraGroups = [ "networkmanager" "wheel" "video" "audio" ]; 
     # hashedPassword = "$6$IqhGanTrCJ3Y8GMS$2.q7j7DfXCbEEo1zUNkQTsSL5JuPpZbM4AghPXdycMBL6Hond51SCECELA7ufpbdrlq/u5UY/91Ph4Pu5Q/GW.";
-    password = "Lupitwa";
+   # password = "Lupitwa";
     shell = pkgs.zsh;
   };
 # List programs that you want to enable:

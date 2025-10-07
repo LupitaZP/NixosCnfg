@@ -38,7 +38,7 @@
         #!/usr/bin/env zsh
         set -e
 
-        USER_HOME=/home/moperatico
+        USER_HOME=/home/lupita
 
         log() {
           echo "[$(date)] - $1" | tee -a "$USER_HOME/postgres_migration.log"
